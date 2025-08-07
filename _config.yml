@@ -1,0 +1,24 @@
+# GitHub Pages Configuration
+title: "J. Wehrstein - Academic Homepage"
+description: "Personal academic website featuring research, publications, and professional information"
+author: "J. Wehrstein"
+email: "johannes.wehrstein@cs.tu-darmstadt.de"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Social media and academic profiles (update with your actual profiles)
+social:
+  - title: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=2xFqwwMAAAAJ&hl=en&oi=ao"
+  - title: "GitHub"
+    url: "https://github.com/jwehrstein"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/johannes-wehrstein"
+
+# SEO settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
