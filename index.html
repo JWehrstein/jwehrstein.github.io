@@ -4,44 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J. Wehrstein - Academic Homepage</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Johannes Wehrstein - AI Database Researcher | TU Darmstadt | Google Systems Research</title>
+    <meta name="description" content="Johannes Wehrstein is a PhD researcher specializing in AI for databases, learned database components, and foundation database models at TU Darmstadt and Google Systems Research.">
+    <meta name="keywords" content="Johannes Wehrstein, AI databases, learned database components, query optimization, foundation models, TU Darmstadt, Google Research, DBMS, machine learning">
+    <meta name="author" content="Johannes Wehrstein">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwehrstein.github.io/">
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jwehrstein.github.io/">
+    <meta property="og:title" content="Johannes Wehrstein - AI Database Researcher">
+    <meta property="og:description" content="PhD researcher specializing in AI for databases, learned database components, and foundation database models at TU Darmstadt and Google Systems Research.">
+    <meta property="og:image" content="https://jwehrstein.github.io/images/profile.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Johannes Wehrstein">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="msapplication-TileColor" content="#2c3e50">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Favicon (you may want to add actual favicon files) -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Johannes Wehrstein",
+        "jobTitle": "Doctoral Researcher",
+        "affiliation": [
+            {
+                "@type": "Organization",
+                "name": "Technical University of Darmstadt",
+                "url": "https://tuda.systems"
+            },
+            {
+                "@type": "Organization", 
+                "name": "Google Systems Research",
+                "url": "https://research.google"
+            }
+        ],
+        "url": "https://jwehrstein.github.io/",
+        "image": "https://jwehrstein.github.io/images/profile.jpg",
+        "email": "johannes.wehrstein@cs.tu-darmstadt.de",
+        "knowsAbout": [
+            "Artificial Intelligence",
+            "Database Management Systems",
+            "Machine Learning",
+            "Query Optimization",
+            "Foundation Models",
+            "Computer Science"
+        ],
+        "alumniOf": [
+            {
+                "@type": "Organization",
+                "name": "Technical University of Darmstadt"
+            },
+            {
+                "@type": "Organization",
+                "name": "University of Illinois at Urbana-Champaign"
+            }
+        ],
+        "sameAs": [
+            "https://scholar.google.com/citations?user=2xFqwwMAAAAJ&hl=en&oi=ao",
+            "https://www.linkedin.com/in/johannes-wehrstein",
+            "https://github.com/jwehrstein"
+        ]
+    }
+    </script>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">J. Wehrstein</a>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#research" class="nav-link">Research</a>
-                <a href="#publications" class="nav-link">Publications</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <a href="#home" class="nav-logo" aria-label="Johannes Wehrstein - Home">J. Wehrstein</a>
+            <div class="nav-menu" role="menubar">
+                <a href="#home" class="nav-link" role="menuitem">Home</a>
+                <a href="#about" class="nav-link" role="menuitem">About</a>
+                <a href="#research" class="nav-link" role="menuitem">Research</a>
+                <a href="#publications" class="nav-link" role="menuitem">Publications</a>
+                <a href="#contact" class="nav-link" role="menuitem">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" role="banner">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-image">
-                    <img src="images/profile.jpg" alt="Dr. J. Wehrstein" class="profile-img">
+                    <img src="images/profile.jpg" alt="Portrait of Johannes Wehrstein, AI Database Researcher" class="profile-img" width="300" height="300" loading="eager">
                 </div>
                 <div class="hero-text">
-                    <h1>Johannes Wehrstein</h1>
-                    <h2>Researcher for AI for (Cloud) Databases, Sportive, Tech-Nerd, Christian</h2>
+                    <h1 itemprop="name">Johannes Wehrstein</h1>
+                    <h2 class="hero-subtitle">AI Database Researcher & PhD Student at TU Darmstadt</h2>
                     <p class="hero-description">
                         Welcome to my academic homepage. I am a passionate researcher working at the intersection of
-                        AI and (cloud) databases, with a focus on learned database components and foundation models.
+                        AI and cloud databases, specializing in learned database components, foundation models, and query optimization. - Sportive, Tech-Nerd, Christian
                     </p>
                     <div class="hero-links">
-                        <a href="#contact" class="btn-primary">Get in Touch</a>
-                        <!-- <a href="files/cv.pdf" class="btn-secondary" target="_blank">
+                        <a href="#contact" class="btn-primary" aria-label="Contact Johannes Wehrstein">Get in Touch</a>
+                        <!-- <a href="files/cv.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Download Johannes Wehrstein's CV">
                             <i class="fas fa-download"></i> Download CV
                         </a> -->
                     </div>
@@ -51,13 +138,13 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section" role="main">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
+            <div class="about-content" itemscope itemtype="https://schema.org/Person">
                 <div class="about-text">
                     <p>
-                        I am a Doctoral Researcher in the <a href="https://tuda.systems" class="link" target="_blank" >Systems Group at TU Darmstadt</a>, working on learned database
+                        I am a Doctoral Researcher in the <a href="https://tuda.systems" class="link" target="_blank" rel="noopener noreferrer">Systems Group at TU Darmstadt</a>, working on learned database
                         components.
                         My research focuses on leveraging AI to improve database performance, covering areas such as
                         cost estimation, query optimization, advisory systems, and foundational AI research on
@@ -132,67 +219,61 @@
     </section>
 
     <!-- Research Section -->
-    <section id="research" class="section bg-light">
+    <section id="research" class="section bg-light" role="complementary" aria-labelledby="research-title">
         <div class="container">
-            <h2 class="section-title">Research</h2>
+            <h2 id="research-title" class="section-title">Research Areas</h2>
             <div class="research-grid">
-                <div class="research-item">
-                    <div class="research-icon">
+                <article class="research-item">
+                    <div class="research-icon" aria-hidden="true">
                         <i class="fas fa-microscope"></i>
                     </div>
                     <h3>Learned Database Components</h3>
-                    <p>
-
-                    </p>
-                </div>
-                <div class="research-item">
-                    <div class="research-icon">
+                    <p>Developing AI-powered database systems that learn and adapt to optimize query performance, cost estimation, and system configurations automatically.</p>
+                </article>
+                <article class="research-item">
+                    <div class="research-icon" aria-hidden="true">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>Foundation Database Models</h3>
-                    <p>
-
-                    </p>
-                </div>
-                <div class="research-item">
-                    <div class="research-icon">
+                    <p>Creating universal AI models that can generalize across different database systems, workloads, and optimization tasks without task-specific training.</p>
+                </article>
+                <article class="research-item">
+                    <div class="research-icon" aria-hidden="true">
                         <i class="fas fa-cogs"></i>
                     </div>
                     <h3>Cloud Systems Optimizations</h3>
-                    <p>
-
-                    </p>
-                </div>
+                    <p>Optimizing database performance in cloud environments through intelligent resource allocation, query planning, and adaptive system configurations.</p>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Publications Section -->
-    <section id="publications" class="section">
+    <section id="publications" class="section" role="complementary" aria-labelledby="publications-title">
         <div class="container">
-            <h2 class="section-title">Publications</h2>
+            <h2 id="publications-title" class="section-title">Publications</h2>
 
             <div class="publications-category">
                 <div class="publication-list">
-                    <div class="publication-item">
+                    <article class="publication-item" itemscope itemtype="https://schema.org/ScholarlyArticle">
                         <div class="pub-content">
-                            <h4 class="pub-title">JOB-Complex: A Challenging Benchmark for Traditional & Learned
+                            <h4 class="pub-title" itemprop="name">JOB-Complex: A Challenging Benchmark for Traditional & Learned
                                 Query Optimization</h4>
                             <p class="pub-authors"><strong>Johannes Wehrstein</strong>, Timo Eckmann, Roman
                                 Heinrich, Carsten Binnig</p>
                             <p class="pub-venue"><em>AIDB@VLDB</em>, 2025</p>
                             <p style="color: #e67e22; font-weight: bold; margin-bottom: 1.2rem;">
-                                <i class="fas fa-clock" style="color: #e67e22; margin-right: 6px;"></i> Upcoming (September 1st, London, UK)
+                                <i class="fas fa-clock" style="color: #e67e22; margin-right: 6px;" aria-hidden="true"></i> Upcoming (September 1st, London, UK)
                             </p>
                             <div class="pub-links">
-                                <a href="https://arxiv.org/pdf/2507.07471" class="pub-link" target="_blank"><i
-                                        class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://arxiv.org/pdf/2507.07471" class="pub-link" target="_blank" rel="noopener noreferrer" aria-label="Download PDF of JOB-Complex paper"><i
+                                        class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>
                                 <a href="https://github.com/DataManagementLab/JOB-Complex" class="pub-link"
-                                    target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    target="_blank" rel="noopener noreferrer" aria-label="View JOB-Complex GitHub repository"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
                             </div>
 
                         </div>
-                    </div>
+                    </article>
                     <div class="publication-item">
                         <div class="pub-content">
                             <h4 class="pub-title">Opening The Black-Box: Explaining Learned Cost Models For
@@ -201,6 +282,9 @@
                                 <strong>Johannes Wehrstein</strong>, Carsten Binnig
                             </p>
                             <p class="pub-venue"><em>VLDB (Demo)</em>, 2025</p>
+                            <p style="color: #e67e22; font-weight: bold; margin-bottom: 1.2rem;">
+                                <i class="fas fa-clock" style="color: #e67e22; margin-right: 6px;" aria-hidden="true"></i> Upcoming (September 1st-5th, London, UK)
+                            </p>
                             <div class="pub-links">
                                 <a href="https://arxiv.org/pdf/2507.14495" class="pub-link" target="_blank"><i
                                         class="fas fa-file-pdf"></i> PDF</a>
@@ -266,24 +350,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="publication-item">
+                    <article class="publication-item" itemscope itemtype="https://schema.org/ScholarlyArticle">
                         <div class="pub-content">
                             <h4 class="pub-title">Towards Foundation Database Models</h4>
                             <p class="pub-authors"><strong>Johannes Wehrstein</strong>, Carsten Binnig, Fatma
                                 Özcan, Shobha Vasudevan, Yu Gan, Yawen Wang</p>
                             <p class="pub-venue"><em>CIDR</em>, 2025</p>
                             <p style="color: #e67e22; font-weight: bold; margin-bottom: 1.2rem;">
-                                <i class="fas fa-trophy" style="color: #e67e22; margin-right: 6px;"></i> Best Paper
+                                <i class="fas fa-trophy" style="color: #e67e22; margin-right: 6px;" aria-hidden="true"></i> Best Paper
                                 Award
                             </p>
                             <div class="pub-links">
                                 <a href="files/publications/Towards Foundation Database Models.pdf" class="pub-link"
-                                    target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    target="_blank" rel="noopener noreferrer" aria-label="Download PDF of Foundation Database Models paper"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>
                                 <a href="files/presentations/2025_01_22 CIDR Presentation Towards Foundation Database Models.pdf"
-                                    class="pub-link" target="_blank"><i class="fas fa-download"></i> Slides</a>
+                                    class="pub-link" target="_blank" rel="noopener noreferrer" aria-label="Download presentation slides for Foundation Database Models"><i class="fas fa-download" aria-hidden="true"></i> Slides</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                     <div class="publication-item" style="display: flex; align-items: flex-start;">
                         <div class="pub-content">
                             <h4 class="pub-title">The Case for Multi-Task Zero-Shot Learning for Databases</h4>
@@ -328,38 +412,40 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
+    <section id="contact" class="section bg-light" role="complementary" aria-labelledby="contact-title">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-content">
+            <h2 id="contact-title" class="section-title">Contact</h2>
+            <div class="contact-content" itemscope itemtype="https://schema.org/Person">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h3>Email</h3>
                             <a href="mailto:johannes.wehrstein@cs.tu-darmstadt.de"
-                                class="contact-email">johannes.wehrstein@cs.tu-darmstadt.de</a>
+                                class="contact-email" itemprop="email" aria-label="Send email to Johannes Wehrstein">johannes.wehrstein@cs.tu-darmstadt.de</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-item" itemprop="workLocation" itemscope itemtype="https://schema.org/Place">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         <div>
-                            <h4>Office</h4>
-                            <p>Room D110, Building S202<br>
-                                Systems-Group<br>
-                                Technical University of Darmstadt<br>
-                                Darmstadt, Germany</p>
+                            <h3>Office</h3>
+                            <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">Room D110, Building S202</span><br>
+                                <span itemprop="name">Systems-Group</span><br>
+                                <span itemprop="addressLocality">Technical University of Darmstadt</span><br>
+                                <span itemprop="addressLocality">Darmstadt</span>, <span itemprop="addressCountry">Germany</span>
+                            </address>
                         </div>
                     </div>
                 </div>
                 <div class="social-links">
-                    <h4>Connect with me</h4>
+                    <h3>Connect with me</h3>
                     <div class="social-icons">
                         <a href="https://scholar.google.com/citations?user=2xFqwwMAAAAJ&hl=en&oi=ao"
-                            class="social-link"><i class="fab fa-google-scholar"></i> Google Scholar</a>
-                        <a href="https://www.linkedin.com/in/johannes-wehrstein" class="social-link"><i
-                                class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/jwehrstein" class="social-link"><i class="fab fa-github"></i>
+                            class="social-link" target="_blank" rel="noopener noreferrer" itemprop="sameAs" aria-label="View Johannes Wehrstein's Google Scholar profile"><i class="fab fa-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+                        <a href="https://www.linkedin.com/in/johannes-wehrstein" class="social-link" target="_blank" rel="noopener noreferrer" itemprop="sameAs" aria-label="Connect with Johannes Wehrstein on LinkedIn"><i
+                                class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                        <a href="https://github.com/jwehrstein" class="social-link" target="_blank" rel="noopener noreferrer" itemprop="sameAs" aria-label="View Johannes Wehrstein's GitHub profile"><i class="fab fa-github" aria-hidden="true"></i>
                             GitHub</a>
                     </div>
                 </div>
@@ -368,9 +454,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <p>&copy; 2025 J. Wehrstein. All rights reserved.</p>
+            <p>&copy; 2025 <span itemprop="name">Johannes Wehrstein</span>. All rights reserved.</p>
+            <p><small>Last updated: August 2025</small></p>
         </div>
     </footer>
 

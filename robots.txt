@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jwehrstein.github.io/sitemap.xml
+
+# Block crawling of any potential admin or private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow crawling of CSS, JS, and image files
+Allow: /styles.css
+Allow: /script.js
+Allow: /images/
+Allow: /files/

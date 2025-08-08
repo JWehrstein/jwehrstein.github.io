@@ -1,0 +1,27 @@
+{
+  "name": "Johannes Wehrstein - Academic Homepage",
+  "short_name": "J. Wehrstein",
+  "description": "Academic homepage of Johannes Wehrstein, AI Database Researcher at TU Darmstadt and Google Systems Research",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2c3e50",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/profile.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/profile.jpg", 
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity", "academic"],
+  "lang": "en",
+  "scope": "/"
+}
